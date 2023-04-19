@@ -8,18 +8,6 @@ find_package(iceoryx_posh CONFIG REQUIRED)
 # find_package(iceoryx_hoofs CONFIG REQUIRED)
 
 
-# iox_add_executable(
-#     TARGET  iox-cpp-publisher-helloworld
-#     FILES   ./iox_publisher_helloworld.cpp
-#     LIBS    iceoryx_posh::iceoryx_posh
-# )
-
-# iox_add_executable(
-#     TARGET  iox-cpp-subscriber-helloworld
-#     FILES   ./iox_subscriber_helloworld.cpp
-#     LIBS    iceoryx_posh::iceoryx_posh
-# )
-
 add_executable(pub ${ROOT}/hello_pub.cpp)
 target_link_libraries(pub iceoryx_posh::iceoryx_posh)
 
